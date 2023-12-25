@@ -1,2 +1,2 @@
-# Neural-Networks
+# Neural_Networks
 Tinkering around with neural networks
