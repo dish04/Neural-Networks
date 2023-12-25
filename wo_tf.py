@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 
 #Using mnist data set to understand the basics of neural networks
 
-data = pan.read_csv('/Users/dishantharya/new code/neural nets/train.csv')
+data = pan.read_csv('train.csv')
 data = npy.array(data)
 m, n = data.shape
 npy.random.shuffle(data)
