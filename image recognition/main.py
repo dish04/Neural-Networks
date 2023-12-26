@@ -25,25 +25,6 @@ data_gen = ImageDataGenerator(rescale=1./255)
 train = data_gen.flow_from_directory(data_train, class_mode = 'binary')
 test = data_gen.flow_from_directory(data_test, class_mode = 'binary')
 
-
-#Defining first model with 2 hidden layers with 128 nodes each
-#model1 = tf.keras.models.Sequential()
-
-#model1.add(tf.keras.layers.Flatten())
-#model1.add(tf.keras.layers.Dense(128, activation=tf.nn.relu)) #Adding first hidden layer which is using 128 neurons and ReL_U as activation
-#model1.add(tf.keras.layers.Dense(128, activation=tf.nn.relu)) #Adding second hidden layer which is using 128 neurons and ReL_U as activation
-#model1.add(tf.keras.layers.Dense(2, activation=tf.nn.softmax)) #Output layer with 2 outputs i.e. male or female
-
-#Saving model1
-#model1.compile(
-#    optimizer='adam',
-#    loss=tf.losses.BinaryCrossentropy(),
-#    metrics=['accuracy']
-#    )
-
-#history = model1.fit(train , epochs=10, validation_data = test)
-#model1.save("model1")
-
 #Model2
 model2 = Sequential()
 
