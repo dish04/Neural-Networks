@@ -31,6 +31,5 @@ y = np.array(df['label'])
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size = 0.2)
 
 clf1 = LinearRegression(n_jobs=-1)
-#y_hat2 = LinearRegressionRaw(data=[x_train,y_train])
 y_hat1 = clf1.fit(x_train,y_train)
 print(y_hat1.score(x_train,y_train))
