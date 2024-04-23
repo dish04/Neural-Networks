@@ -33,7 +33,7 @@ model1.fit(x_train,y_train)
 model1_prediction = model1.predict([predict])
 
 model2_prediction = KNearest(data2,predict,k=10)
-print(y_test)
+# print(y_test)
 print("SciPy's classifier's prediction = ",model1_prediction[0],"\nRaw KNN's prediction = ",model2_prediction)
 print("SciPy's classifier's score = ",model1.score(x_test,y_test),"\nRaw KNN's score = ",score(data2,np.array(x_test),np.array(y_test)))
 
