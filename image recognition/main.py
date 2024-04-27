@@ -11,6 +11,9 @@ from tensorflow.keras.layers import (Conv2D, Dense, Dropout, Flatten,
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
+'''
+    Binary Image classifier
+'''
 #Limiting RAM
 gpus = tf.config.experimental.list_physical_devices('GPU')
 for gpu in gpus:
